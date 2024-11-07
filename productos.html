@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos Disponibles</title>
+    <link rel="stylesheet" href="productos.css">
+</head>
+<body>
+    <header>
+        <h1>Productos Disponibles</h1>
+        <nav>
+            <a href="index.html">Volver a la tienda</a> | 
+            <a href="carrito.html" id="cartLink">Carrito (<span id="cartCount">0</span>)</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-list">
+            
+            <div class="product-item">
+                <img src="imagenes/macetas2.jpg" alt="Producto 1">
+                <p>Maceta de cerámica hecha a mano</p>
+                <p>$20.00</p>
+                <button class="add-to-cart" data-product="producto1">Agregar al carrito</button>
+            </div>
+            
+            <div class="product-item">
+                <img src="imagenes/macetas3.webp" alt="Producto 2">
+                <p>Vasija decorativa</p>
+                <p>$15.00</p>
+                <button class="add-to-cart" data-product="producto2">Agregar al carrito</button>
+            </div>
+            <!-- Más productos aquí -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Productos Hechos a Mano</p>
+    </footer>
+
+    <script src="productos.js"></script>
+</body>
+</html>

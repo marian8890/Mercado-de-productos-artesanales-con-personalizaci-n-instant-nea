@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos Hechos a Mano - Personalización en Tiempo Real</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Tu Tienda de Productos Hechos a Mano</h1>
+        <p>Personaliza tus productos y hazlos únicos</p>
+    </header>
+
+    <main>
+        <section class="product-preview">
+            <h2>Vista Previa del Producto</h2>
+            <div class="product-display" id="productDisplay">
+                <img src="imagenes/macetas.jpg" alt="Producto Personalizado" id="productImage">
+            </div>
+        </section>
+
+        <section class="customization">
+            <h2>Personaliza tu Producto</h2>
+            <form id="customizationForm">
+                <label for="color">Elige un Color:</label>
+                <input type="color" id="color" name="color" value="#ff6347">
+
+                <label for="pattern">Selecciona un Patrón:</label>
+                <select id="pattern" name="pattern">
+                    <option value="none">Ninguno</option>
+                    <option value="dots">Puntos</option>
+                    <option value="stripes">Rayas</option>
+                    <option value="floral">Floral</option>
+                </select>
+
+                <label for="text">Añadir Texto:</label>
+                <input type="text" id="text" name="text" placeholder="Texto personalizado" maxlength="20">
+
+                <button type="button" id="updateProductBtn">Actualizar Producto</button>
+            </form>
+        </section>
+
+        <section class="order">
+            <h2>Haz tu Pedido</h2>
+            <button id="orderButton" disabled>Comprar Producto</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Productos Hechos a Mano</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
